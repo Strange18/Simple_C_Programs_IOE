@@ -1,6 +1,9 @@
+// armstrong number is number whose sum of cube of digits is 
+//equal to the number (153 -> 1^3+5^3+3^3 = 153)
+
 #include <stdio.h>
 
-void armstrong(int a)
+void armstrong(int a)       //function to check armstrong number
 {
     int number = a;
     int result = 0, remainder = 0;

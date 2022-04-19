@@ -1,3 +1,6 @@
+//to calculate factorial using recursive function
+//recursive function --> function that calls itself
+
 #include <stdio.h>
 #include <stdlib.h>
 

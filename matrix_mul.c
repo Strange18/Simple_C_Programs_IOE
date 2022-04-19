@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//fun to enter value in the array 
 void enter_matrix(int A[3][3])
 {
     for (int i = 0; i < 3; i++)
@@ -11,6 +12,8 @@ void enter_matrix(int A[3][3])
         }
     }
 }
+
+//fun to display value of the array 
 void display_matrix(int A[3][3])
 {
     for (int i = 0; i < 3; i++)
@@ -23,9 +26,11 @@ void display_matrix(int A[3][3])
         printf("\n");
     }
 }
+//multiplying the array (main logic)
 void multiply_matrix(int A[3][3], int B[3][3])
 {
     int result[3][3];
+    //if not initialized garbage value will be stored in result
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -44,8 +49,9 @@ void multiply_matrix(int A[3][3], int B[3][3])
             }
         }
     }
-    display_matrix(result);
+    display_matrix(result);     //displaying result
 }
+
 int main()
 {
     int A[3][3], B[3][3];

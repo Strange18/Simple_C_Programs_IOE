@@ -1,11 +1,11 @@
-//ascending
+//to arrange data in a array in ascending order
 
 #include <stdio.h>
 
 int main()
 {
-    int array[9] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-    int a;
+    int array[9] = {9, 8, 7, 6, 5, 4, 3, 2, 1};     //array to be in ascending order
+    int a;      //variable for swapping the value 
 
     for (int i = 0; i < 9; i++)
     {
