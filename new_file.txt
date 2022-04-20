@@ -1,0 +1,6 @@
+name = prashanr 
+id = 12 
+school = dasfasfa 
+name = rejina 
+id = 212 
+school = grereds 

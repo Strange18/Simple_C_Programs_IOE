@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-typedef struct students
+struct students
 {
     // structure data holders
     char name[20];

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 int main()
 {
     printf("Welcome to DataFlair tutorials!\n\n");
@@ -14,7 +13,7 @@ int main()
     }
     printf("Enter a character: ");
     scanf("%s", character);
-    fprintf(fpointer, "%s", character); // Use of fprintf() function
+    fprintf(fpointer, "%s", character);  // Use of fprintf() function
     fclose(fpointer);
     return 0;
 }
