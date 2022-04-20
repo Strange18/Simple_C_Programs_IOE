@@ -1,19 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-int main()
+// to add two number
+
+#include <stdio.h> //header file
+
+int main() // main function
 {
-    printf("Welcome to DataFlair tutorials!\n\n");
-    char character[30];
-    FILE *fpointer;
-    fpointer = fopen("C:\\program.txt", "w"); // Here "w" refers to write on file
-    if (fpointer == NULL)
-    {
-        printf("Error! The file does not exist.");
-        exit(0);
-    }
-    printf("Enter a character: ");
-    scanf("%s", character);
-    fprintf(fpointer, "%s", character);  // Use of fprintf() function
-    fclose(fpointer);
-    return 0;
+    // identifier declaration
+    int variable; // interger data ---> variable identifer ma hold hunxa
+
+    // identfier initialization
+    // variable = 1;
+
+    printf("enter the value for variable \n");
+
+    scanf("%d", &variable);
+
+    int variable2; // identiifer declaration
+
+    variable2 = 2; // identifier initialization
+
+    int result; // to store result
+
+    result = variable2 + variable;
+
+    printf("the result of addition %d \n", result);
 }
