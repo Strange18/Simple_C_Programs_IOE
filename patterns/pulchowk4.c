@@ -1,6 +1,6 @@
 
 /*
-
+       K
       WK
      OWK
     HOWK
@@ -15,13 +15,13 @@ PULCHOWK
 int main()
 {
     char name[] = "PULCHOWK";
-    for (int i = 0; i <= 7; i++)
+    for (int i = 0; i <= 7; i++)                // i = 1
     {
-        for (int k = 7 - i; k > 0; k--)
+        for (int j = 7 - i; j > 0; j--)         //j = 6, j = 5, j = 4
             printf(" ");
-        for (int j = 7 - i; j < 8; j++)
+        for (int k = 7 - i; k < 8; k++)         //k = 6, k = 7
         {
-            printf("%c", name[j]);
+            printf("%c", name[k]);
         }
         printf("\n");
     }

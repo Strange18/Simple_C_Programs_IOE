@@ -17,16 +17,18 @@ typedef struct students students;
 int main()
 {
     FILE *fpointer;
-    fpointer = fopen("new_file.txt", "w");
+    fpointer = fopen("new_file.txt", "w"); //.bin or .dat -> binary files
     if (fpointer == NULL)
     {
         printf("'file cannot be opened\n");
-        exit(0);
+        exit(1); // error code , 0-> , 1->
     }
-    students s[2], r[2];
-    for (int i = 0; i < 2; i++) // entering value to the structure
+    students s[2]; // s[0],s[1]
+    students r[2]; // int array[2],array2[3];
+
+    for (int i = 0; i < 2; i++) // entering value to the structure from userrr
     {
-        scanf("%s", s[i].name);
+        scanf("%s", s[i].name); // s[0],s[1]
         scanf("%d", &s[i].id);
         scanf("%s", s[i].school);
     }
@@ -39,30 +41,30 @@ int main()
         fprintf(fpointer, "school = %s \n", s[i].school);
     }
     fclose(fpointer);
+}
+// reading from the file
+// FILE *fpointer_read;
+// fpointer_read = fopen("new_file.txt", "r");
+// if (fpointer_read == NULL)
+// {
+//     printf("'file cannot be opened\n");
+//     exit(0);
+// }
+// for (int i = 0; i < 2; i++) // entering value to the structure
+// {
+//     fscanf(fpointer_read, "name = %s \n", s[i].name);
+//     fscanf(fpointer_read, "id = %d \n", s[i].id);
+//     fscanf(fpointer_read, "school = %s \n", s[i].school);
+// }
+// char reading;
+// while ((reading = fgetc(fpointer_read)) != EOF)
+// {
+//     // fscanf(fpointer_read,"%c", reading);
+//     printf("%c", reading);
+// }
+// printf("%s", reading);
 
-    // reading from the file
-    // FILE *fpointer_read;
-    // fpointer_read = fopen("new_file.txt", "r");
-    // if (fpointer_read == NULL)
-    // {
-    //     printf("'file cannot be opened\n");
-    //     exit(0);
-    // }
-    // for (int i = 0; i < 2; i++) // entering value to the structure
-    // {
-    //     fscanf(fpointer_read, "name = %s \n", s[i].name);
-    //     fscanf(fpointer_read, "id = %d \n", s[i].id);
-    //     fscanf(fpointer_read, "school = %s \n", s[i].school);
-    // }
-    // char reading;
-    // while ((reading = fgetc(fpointer_read)) != EOF)
-    // {
-    //     // fscanf(fpointer_read,"%c", reading);
-    //     printf("%c", reading);
-    // }
-    // printf("%s", reading);
-
-    // fscanf(fileName, "%s %s %d", str1, str2, &yr);
+// fscanf(fileName, "%s %s %d", str1, str2, &yr);
 //     fscanf(fpointer_read, "%s\t %d\t %s\n", r[0].name, &r[0].id, r[0].school);
 
 //     printf("%s\n", r[0].name);

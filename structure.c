@@ -1,3 +1,5 @@
+//to use structure 
+
 #include <stdio.h>
 
 struct student          //structure definition 
@@ -9,7 +11,7 @@ struct student          //structure definition
 
 int main()
 {
-    struct student s2;      //creating structure data type next way
+    struct student s2;      //creating structure data type next way equivalent to int a
 
     // taking values in structure
     scanf("%s", s1.name);

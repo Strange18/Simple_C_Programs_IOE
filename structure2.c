@@ -13,9 +13,12 @@ struct students
 // easier convention for making strutre variable
 typedef struct students students;
 
+//typedef struct students apple
+//apple s[2]
+
 int main()
 {
-    students s[2]; // structure array
+    students s[2]; // structure array / struct strudents
     for (int i = 0; i < 2; i++)     //entering value to the structure
     {
         scanf("%s", s[i].name);
