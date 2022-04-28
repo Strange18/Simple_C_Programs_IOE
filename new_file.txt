@@ -1,6 +1,0 @@
-name = rejina 
-id = 12 
-school = sfewrasdas 
-name = langre 
-id = 12 
-school = dasegwrwaaw 

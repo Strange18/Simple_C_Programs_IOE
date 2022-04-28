@@ -1,5 +1,5 @@
 // pattern of triangle form of Nepal
-/*      
+/*
     N
    eee
   PPPPP
